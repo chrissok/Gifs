@@ -1,0 +1,272 @@
+:root {
+    --backgrCute: rgb(255, 235, 250);
+    --gradientCute:linear-gradient(267deg, rgba(247,201,243,1) 0%, rgba(65,128,246,1) 100%);
+    --buttonCute: #F7C9F3;
+    --fontOneCute:rgb(0, 0, 0);
+    --fontTwoCute:rgb(255, 255, 255);
+
+    --modoBut: var(--buttonDark);
+    --modoFont:var(--fontTwo);
+    --backgr: var(--backgrCute);
+    --gradient: var(--gradientCute);
+    --button: var(--buttonCute);
+    --fontOne:var(--fontOneCute);
+    --fontTwo:var(--fontTwoCute);
+
+    --buttonDark:   rgb(180, 0, 156);
+    --gradientDark:linear-gradient(267deg, rgb(180, 1, 156) 0%, rgb(54, 111, 218) 100%);
+    --backgrDark: rgb(32, 20, 83);
+    --fontOneDark:rgb(255, 255, 255);
+    --fontTwoDark:rgb(0, 0, 0);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+} 
+
+#logo{
+    display: block;
+    transition: 1s;
+}
+
+#logoDark{
+    display: none;
+    transition: 1s;
+}
+
+#GD{
+    font-family: 'Chakra Petch';
+    font-size: 12px;
+    color: var(--fontOneDark);
+    letter-spacing: 0;
+    box-shadow: 0 1px 0 0 #110038;
+    background: var(--gradient);
+}
+
+body{
+    background-color:var(--backgr);
+    transition: 1s;
+}
+
+.busq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 125px;
+    margin-right: 125px;
+}
+
+.busq p{
+    font-family: 'Chakra Petch';
+    font-weight: bold;
+    background: var(--gradient);
+    color: var(--fontOneDark);
+}
+.gris{
+    display: flex; 
+    flex-direction: row;
+    box-shadow: #B4B4B4;
+    background-color: #E6E6E6;
+    border-color: #979797;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+
+}
+.grisCh{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 7px;
+}  
+#searchButton{
+    margin-left: 15px;
+    font-family: 'Chakra Petch';
+    font-weight: lighter;
+    font-size: 16px;
+    border: 1px solid #808080;
+    color: #B4B4B4;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+#searchText{
+    width: 90%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-bottom: 50px; 
+}
+.but{
+    font-family: 'Chakra Petch';
+    width: 100px;
+    margin-right: 10px;
+    font-size: 16px;
+    background-color: var(--button);
+    outline-color: #110038;
+    box-shadow: #997D97;
+    color: var(--fontOne);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    transition: 1s;
+}
+
+#modoBut:hover{
+    background: var(--modoBut);
+    color: var(--modoFont);
+}
+
+#tuGif{
+    text-decoration: none;
+    color: inherit;
+    cursor: auto;
+}
+#misGifs{
+    font-family: 'Chakra Petch';  
+    font-size: 16px;
+    align-self: center;
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--fontOne);
+}
+nav div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav button {
+    font-family: 'Chakra Petch' ;
+}
+
+.gifGrid{  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    height: 10px;
+    transition: 1s;
+}
+.gifGrid img {
+    flex-basis: 1 1 auto;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 20%;
+    height: auto;
+}
+.h{
+    display: none;
+}
+.g{
+    display: none;
+}
+.i{
+    display: none;
+}
+
+.trendingCont{
+    display: flex;
+    flex-direction: column;
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-bottom: 50px;
+}
+.trendingCont p{
+    font-family: 'Chakra Petch' ;
+    color: var(--fontTwoDark) ;
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    padding-top: 7px;
+    padding-left: 5px;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+}
+.trending{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.trending img{
+    flex-basis: 1 1 auto;
+    width: 20%;
+    height: auto;
+}
+
+
+/*-----------------VIDEO---------------*/
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 100px;
+}
+
+.video button{
+    font-family: 'Chakra Petch';
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    background-color: var(--button);
+    outline-color: #110038;
+    box-shadow: #997D97;
+    color: var(--fontOne);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+}
+
+.c1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.c2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c3{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.vid{
+    margin-bottom: 10px;
+}
+
+#gifSave{
+    display: none;
+}
+#stopBtn{
+    display: none;
+}
+#startBtn{
+    display: none;
+}
+#guardar{
+    display: none;
+    align-self: center;
+}
+#subir{
+    display: none;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 200px;
+}
